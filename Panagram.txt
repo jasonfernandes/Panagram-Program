@@ -1,0 +1,14 @@
+s="abcdefgh iilmnopqrstuvwxyz"
+j=s.upper()
+d={}
+for i in j:
+    if i.isspace()==True:
+        continue
+    if i in d:
+        d[i]+=1
+    else:
+        d[i]=1
+if len(d)+1 == 26:
+    print('yes')
+else:
+    print('no')
